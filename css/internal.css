@@ -88,7 +88,7 @@ a {
 }
 
 ul {
-  display: none;
+  /* display: none; */
 }
 
 li {
@@ -181,13 +181,15 @@ li {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 
 .menu ul{
   margin: 0;
   padding: 0;
   list-style-type: none;
-  background: #ffffff;
+  background: red;
   height: 25px;
   line-height: 25px;
   
@@ -198,6 +200,8 @@ li {
   padding: 0;
   float: left;
   position: relative;
+  width: 20vw;
+  text-align: center;
 }
 
 .menu ul li a{
@@ -236,7 +240,39 @@ li {
 
 /* Test Body */
 #testbody {
-  background-image: url(/img/we_the_people.jpg);
+  background-image: url(../img/we_the_people.jpg);
+  height: 86vh;
+  border: 1px solid red;
+}
+
+body {
+  background: darkblue;
+}
+
+header {
+  background-color: white;
+}
+
+
+#parchment {
+  position: absolute;
+  display: flex;
+  width: 90%;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 9%);
+  margin: 2em 0;
+  padding: 4em;
+  box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+  background: #fffef0;
+  filter: url(#real1);
+  height: 87vh;
+}
+
+#verbiage {
+  position: relative;
+  z-index: 1;
+  margin: 0 8vw;
 }
 
 

@@ -11,7 +11,11 @@
 		<!-- <link rel="stylesheet" href="css/style.css"> -->
 		<link rel="stylesheet" href="css/internal.css">
 	</head>
-	<body id="testbody">
+	<body>
+		<header>
+			<img id="hp_logo" src="img/Eagle_claws.png" alt="Dangerous Freedom logo">
+			<h1>Dangerous Freedoms</h1>
+		</header>
 		<div class="menu">
 			<ul>
 			  <li><a href="#">Home</a></li>
@@ -32,8 +36,20 @@
 			  </li>
 			  <li><a href="#">Portfolio</a></li>
 			</ul>
-			</div>
-			<p>It does exist</p>
+		</div>
+		<main>
+			<section id="parchment"></section>
+			<section id="verbiage"><p>It does exist</p></section>
+			
+
+		</main>
+			
+		<svg>
+			<filter id="real1">
+			  <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1" />
+			  <feDisplacementMap in="SourceGraphic" scale="20" />
+			</filter>
+		  </svg>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
