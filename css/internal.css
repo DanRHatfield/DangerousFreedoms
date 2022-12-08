@@ -18,13 +18,13 @@ body {
   height: 88vh;
 }
 
-menu {
+menu, ul {
   margin: 20px;
   padding: 0;  
   color: white;  
 }
   
-menu {
+menu ul {
   list-style-type: none;
   font-size: 2em;
   line-height: 4em;
@@ -87,13 +87,159 @@ a {
   align-items: center;
 }
 
-#insideMenu {
+ul {
+  display: none;
+}
+
+li {
+  float: left;
+}
+
+.insideMenu {
   display: flex;
   justify-content: space-around;
   margin: 0px;
   background-color: grey;
   padding: 2px;
 }
+
+/* About Us page */
+
+.bio {
+  width: 92vw;
+  /* height: 25vh; */
+  background: tan;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 15px 0 0 0;
+  border: 2px solid white;
+}
+
+.about {
+  width: 145px;
+  height: 160px;
+  float: left;
+  margin: 3px 10px;
+}
+
+.aboutface {
+  float: right;
+}
+
+.red {
+  color: red;
+}
+
+.white {
+  color: white;
+}
+
+.blue {
+  color: blue;
+}
+
+/* Services page */
+
+#services_page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: navy;
+  height: 88vh;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 400px;
+  margin: 20px 0 0 0;
+  background-color: red;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.service h2 {
+  text-align: center;
+}
+
+.ser_img {
+  width: 280px;
+  height: 150px;
+  margin: auto;
+}
+
+.service p {
+  margin: 0px;
+}
+
+/* Start Remove this */
+
+.menu{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.menu ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #ffffff;
+  height: 25px;
+  line-height: 25px;
+  
+}
+
+.menu ul li{
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+}
+
+.menu ul li a{
+  margin: 0;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+.menu ul li:hover ul{ display:block;}
+
+.menu ul li ul{
+  position: absolute;
+  left: 0;
+  top: 20px;
+  display: none;
+  padding: 0;
+  
+}
+
+.menu ul li ul li{
+  padding: 6px 0;
+  background: green;
+  height: 25px;
+  line-height: 25px;
+  width: 100%;
+  
+}
+
+
+/* end Remove this */
+
+/* Test Body */
+#testbody {
+  background-image: url(/img/we_the_people.jpg);
+}
+
+
 @media screen and (max-width: 980px) {
   h1 {
     font-size: 8vw;
@@ -130,11 +276,11 @@ a {
   }
 
   
-  menu {
+  menu, ul {
     margin: 0;
   }  
 
-  menu {
+  menu ul {
     line-height: 2em;
     margin: 53vh 0 0 0;
     text-shadow: 2px 2px 0px black;
@@ -153,7 +299,7 @@ a {
     background-size: cover;
   }
 
-  menu {
+  menu, ul {
     margin: 0;
   }  
 
