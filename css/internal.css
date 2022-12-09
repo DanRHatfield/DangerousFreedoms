@@ -288,14 +288,25 @@ header {
   margin: 0 8vw;
 }
 
-#wtp {
-  background-image: url(../img/we_the_people.webp);
+/* #wtp {
+  background-image: url(../img/we_the_people.webp), url(../img/we_the_people_flag.webp);
   position: relative;
   z-index: 1;
   height: 15vh;
   background-repeat: no-repeat;
   background-position: center;
   margin: 15px 8vw 0 8vw;
+  background-size: contain;
+} */
+
+#wtp {
+  background-image: url(../img/we_the_people_400px.webp);
+  position: relative;
+  z-index: 1;
+  height: 15vh;
+  background-repeat: no-repeat;
+  margin: 15px 5vw 0 5vw;
+  height: 45vh;
   background-size: contain;
 }
 
