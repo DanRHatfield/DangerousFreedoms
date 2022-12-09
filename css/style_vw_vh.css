@@ -42,6 +42,11 @@ menu {
   margin: 0 1vw;
 }
 
+#hp_top {
+  display: flex;
+  align-items: center;
+}
+
 header {
   display: flex;
   justify-content: flex-start;
@@ -70,30 +75,11 @@ a {
   color: white;
 }
 
-/* Services page */
-
-#services_middle {
-  /* background-image: url(../img/flagslogan.jpg); */
-  /* background-image: url(../img/we_the_people.jpg); */
-  /* background-image: url(../img/we_the_people.jpg); */
-  /* background-repeat: no-repeat; */
-  /* background-size: contain; */
-  /* background-size: 100vw; */
-  /* background-size: 100% 100%; */
-  background-color: navy;
-  height: 88vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ul {
+  list-style-type: none;
+  margin: 0 2vw;
 }
 
-#insideMenu {
-  display: flex;
-  justify-content: space-around;
-  margin: 0px;
-  background-color: grey;
-  padding: 2px;
-}
 @media screen and (max-width: 980px) {
   h1 {
     font-size: 8vw;
