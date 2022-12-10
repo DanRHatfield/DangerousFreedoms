@@ -53,6 +53,11 @@ header {
   height: 10vh;
   position: relative;
   z-index: 1;
+  font-family: 'Monsieur La Doulaise', cursive;
+}
+
+main {
+  /* font-family: 'Alex Brush', cursive; */
 }
 
 h1 {
@@ -62,6 +67,7 @@ h1 {
   width: 75.5vw;
   /* border: 1px solid red; */
   text-align: center;
+  font-size: 3.5em;
 }
 
 footer {
@@ -87,10 +93,10 @@ a {
   /* background-size: 100vw; */
   /* background-size: 100% 100%; */
   /* background-color: navy; */
-  height: 88vh;
+  height: 52vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -167,6 +173,8 @@ li {
   /* border: 2px solid white; */
   padding: 10px;
   border-radius: 10px;
+  align-items: center;
+  font-size: 18px;
 }
 
 .service h2 {
