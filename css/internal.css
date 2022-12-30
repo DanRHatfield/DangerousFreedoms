@@ -1,4 +1,3 @@
-/* Box Model Hack */
 * {
   margin: 0;
   padding: 0;
@@ -358,6 +357,8 @@ header {
   padding: 5px;
   border-radius: 10px;
 }
+
+
 
 @media screen and (max-width: 980px) {
   h1 {
