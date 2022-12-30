@@ -7,66 +7,21 @@ body {
   margin: 0;
 	padding: 0;
 	border: 0;
-}
-
-#hp_middle {
-  background-image: url(../img/flagslogan.jpg);
-  background-repeat: no-repeat;
-  /* background-size: contain; */
-  /* background-size: 100vw; */
-  background-size: 100% 100%;
-  height: 88vh;
-}
-
-menu {
-  margin: 20px;
-  padding: 0;  
-  color: white;  
-}
-  
-menu {
-  list-style-type: none;
-  font-size: 2em;
-  line-height: 4em;
-  text-align: right;
-  margin: 20vh 2vw 0 0;
-  text-shadow: 2px 2px 0px black;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  width: 200px;
-  float: right;
-  position: relative;
- border: 1px solid white;
-}
-
-/* Index page */
-
-#hp_logo {
-  height: 10vh;
-  margin: 0 1vw;
-}
-
-#hp_top {
-  display: flex;
-  align-items: center;
-  font-family: 'Monsieur La Doulaise', cursive;
+  height: 100vh;
+  width: 100vw;
+  background: black;
 }
 
 header {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  height: 10vh;
-  /* font-family: 'Monsieur La Doulaise', cursive; */
+  font-family: 'Monsieur La Doulaise', cursive;
+  background: white;
+  height: 16vh;
 }
 
-h1 {
-  display: inline-block;
-  margin: auto;
-  font-size: 5em;
-  width: 75.5vw;
-  /* border: 1px solid red; */
-  text-align: center;
+main {
+  height: calc((100vh - 16vh) - 3vh);
 }
 
 footer {
@@ -74,6 +29,56 @@ footer {
   text-align: center;
   color: white;
   height: 2vh;
+}
+
+#hp_middle {
+  background-image: url(../img/flagslogan.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* height: 88vh; */
+  height: calc(100vh - 16vh - 2vh);
+}
+
+menu {
+  margin: 20px;
+  padding: 0;  
+  color: white;  
+  list-style-type: none;
+  font-size: 2em;
+  line-height: min(14vh, 4em);
+  text-align: right;
+  margin-top: calc(100vh - 2vh - 90vh);
+  text-shadow: 2px 2px 0px black;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  width: 200px;
+  float: right;
+  position: relative;
+ /* border: 1px solid white; */
+}
+
+/* Index page */
+
+#hp_logo {
+  height: 100%;
+  margin: 0 1vw;
+}
+
+/* #hp_top {
+  display: flex;
+  align-items: center;
+  font-family: 'Monsieur La Doulaise', cursive;
+  background: white;
+  height: 16vh;
+} */
+
+
+h1 {
+  display: inline-block;
+  margin: auto;
+  font-size: 5em;
+  width: 75.5vw;
+  text-align: center;
 }
 
 a {
@@ -95,8 +100,8 @@ ul {
   position: absolute;
   text-align: center;
   right: 200px;
-  background: rgba(255, 255, 255, .5);
-  border: 1px solid red;
+  background: rgba(255, 255, 255, .4);
+  /* border: 1px solid red; */
   line-height: 1em;
   padding: 0;
   top: 0vh;
@@ -107,7 +112,6 @@ ul {
   margin: auto;
   padding: 5px 10px;
   border-bottom: 1px solid black;
-  /* height: 45px; */
   position: relative;
   width: 100%;
   text-align: center;
@@ -119,7 +123,6 @@ ul {
   }
 
   #hp_middle {
-    /* background-size: cover; */
     background-size: 100% 100%;
   }
   
@@ -127,25 +130,21 @@ ul {
 
 @media screen and (max-width: 800px) {
   h1 {
-    /* font-size: 3em; */
     font-size: 8vw;
   }
 
   #hp_middle {
-    /* background-size: cover; */
     background-size: 100% 100%;
   }
 }
 
 @media screen and (max-width: 580px) {
   h1 {
-    /* font-size: 2.5em; */
     font-size: 8vw;
   }
 
   #hp_middle {
     background-size: cover;
-    /* background-size: 100% 100%; */
   }
 
   
@@ -155,7 +154,8 @@ ul {
 
   menu {
     line-height: 2em;
-    margin: 53vh 0 0 0;
+    /* margin: 53vh 0 0 0; */
+    margin-top: calc(100vh - 2vh - 90vh);
     text-shadow: 2px 2px 0px black;
     font-family: sans-serif;
     letter-spacing: 2px;
@@ -165,7 +165,6 @@ ul {
 
 @media screen and (max-width: 500px) {
   h1 {
-    /* font-size: 2em; */
     font-size: 8vw;
   }
   #hp_middle {
@@ -185,10 +184,8 @@ ul {
 }
 
 
-
 @media screen and (max-width: 400px) {
   h1 {
-    /* font-size: 1.9em; */
     font-size: 8vw;
   }
 
@@ -209,7 +206,6 @@ ul {
   #hp_middle {
     background-size: 860px;
   }
-
 
   menu ul {
     line-height: 2em;
