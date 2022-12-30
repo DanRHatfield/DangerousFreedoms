@@ -199,6 +199,12 @@ ul {
   menu ul {
     line-height: 2em;
   }
+
+  menu {
+    margin: auto;
+    float: none;
+    margin-top: 45vh;
+  }
 }
 
 @media screen and (max-width: 375px) {
