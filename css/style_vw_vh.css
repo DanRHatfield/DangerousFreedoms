@@ -154,12 +154,18 @@ ul {
 
   menu {
     line-height: 2em;
-    /* margin: 53vh 0 0 0; */
+    margin: 53vh 0 0 0;
     margin-top: calc(100vh - 2vh - 90vh);
     text-shadow: 2px 2px 0px black;
     font-family: sans-serif;
     letter-spacing: 2px;
     text-align: center;
+  }
+
+  menu {
+    margin: auto;
+    float: none;
+    margin-top: 45vh;
   }
 }
 
@@ -181,6 +187,12 @@ ul {
     text-align: center;
   }
 
+  menu {
+    margin: auto;
+    float: none;
+    margin-top: 45vh;
+  }
+
 }
 
 
@@ -190,7 +202,7 @@ ul {
   }
 
   #hp_middle {
-    background-size: 100vh;
+    background-size: 860px;
   }
   menu, ul {
     color: white;  
@@ -200,11 +212,7 @@ ul {
     line-height: 2em;
   }
 
-  menu {
-    margin: auto;
-    float: none;
-    margin-top: 45vh;
-  }
+
 }
 
 @media screen and (max-width: 375px) {
