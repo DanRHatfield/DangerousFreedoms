@@ -196,8 +196,13 @@ ul {
     margin: auto;
     float: none;
     margin-top: 45vh;
+    width: 250px;
+
   }
 
+  #services_list {
+    position: initial;
+  }
 }
 
 
