@@ -12,12 +12,18 @@ body {
   background: black;
 }
 
-header {
+header, h1 {
   display: flex;
   align-items: center;
   font-family: 'Monsieur La Doulaise', cursive;
   background: white;
   height: 16vh;
+}
+
+h1 {
+  margin: auto;
+  font-size: clamp(40px, 8vw, 90px);
+  contain: content;
 }
 
 main {
@@ -28,7 +34,7 @@ footer {
   background-color: black;
   text-align: center;
   color: white;
-  height: 2vh;
+  /* height: 2vh; */
 }
 
 #hp_middle {
@@ -72,14 +78,13 @@ menu {
   height: 16vh;
 } */
 
-
-h1 {
+/* h1 {
   display: inline-block;
   margin: auto;
   font-size: 5em;
   width: 75.5vw;
   text-align: center;
-}
+} */
 
 a {
   text-decoration: none;
@@ -119,7 +124,7 @@ ul {
 
 @media screen and (max-width: 980px) {
   h1 {
-    font-size: 8vw;
+    /* font-size: 8vw; */
   }
 
   #hp_middle {
@@ -130,7 +135,7 @@ ul {
 
 @media screen and (max-width: 800px) {
   h1 {
-    font-size: 8vw;
+    /* font-size: 8vw; */
   }
 
   #hp_middle {
@@ -140,7 +145,7 @@ ul {
 
 @media screen and (max-width: 580px) {
   h1 {
-    font-size: 8vw;
+    /* font-size: 8vw; */
   }
 
   #hp_middle {
@@ -171,7 +176,7 @@ ul {
 
 @media screen and (max-width: 500px) {
   h1 {
-    font-size: 8vw;
+    /* font-size: 8vw; */
   }
   #hp_middle {
     background-size: cover;
@@ -196,13 +201,27 @@ ul {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 {
+    height: 8vh;
+  }
+
+  main {
+    height: calc((100vh - 8vh) - 5vh);
+  }
+  
   h1 {
-    font-size: 8vw;
+    font-size: 9vw;
   }
 
   #hp_middle {
-    background-size: 860px;
+    /* background-size: 860px; */
+    background-size: cover;
   }
   menu, ul {
     color: white;  
@@ -212,18 +231,45 @@ ul {
     line-height: 2em;
   }
 
-
+  footer {
+    /* font-size: 5rem; */
+    width: 80%;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 375px) {
 
   #hp_middle {
-    background-size: 860px;
+    background-size: cover;
   }
 
   menu ul {
     line-height: 2em;
     margin: 49vh 0 0 0;
     letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 {
+    height: 10vh;
+  }
+
+  h1 {
+    font-size: clamp(30px, 3vw, 45px)
+  }
+
+  main {
+    height: calc((100vh - 14vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 14vh)
   }
 }
