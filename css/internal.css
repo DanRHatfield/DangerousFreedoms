@@ -392,7 +392,7 @@ header {
   }
 
   #serv_img, #serv_desc {
-    height: 16vh;
+    height: 10vh;
     margin: 5px 5px 0 5px;
     width: auto;
   }
