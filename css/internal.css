@@ -50,11 +50,13 @@ header {
   height: 10vh;
   position: relative;
   z-index: 1;
-  font-family: 'Monsieur La Doulaise', cursive;
+  /* font-family: 'Monsieur La Doulaise', cursive; */
+  font-family: 'Deutsche Zierschrift', sans-serif;
 }
 
 main {
   /* font-family: 'Alex Brush', cursive; */
+  font-family: 'Cinzel', serif;
 }
 
 h1 {
@@ -63,7 +65,8 @@ h1 {
   font-size: 5em;
   width: 75.5vw;
   text-align: center;
-  font-size: 6vh;
+  font-size: 8vh;
+  font-weight: 100;
 }
 
 footer {
@@ -113,11 +116,12 @@ li {
   padding: 8px;
   margin: 15px 0 0 0;
   border: 2px solid white;
+  text-shadow: 0 0 black;
 }
 
 .about {
-  width: 145px;
-  height: 160px;
+  width: 300px;
+  height: 225px;
   float: left;
   margin: 3px 10px;
 }
@@ -311,6 +315,10 @@ header {
   background: rgba(0, 0, 0, 0.5);
   padding: 5px;
   border-radius: 10px;
+}
+
+p {
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 980px) {
