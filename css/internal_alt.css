@@ -59,6 +59,7 @@ main {
   /* font-family: 'Alex Brush', cursive; */
   font-family: 'Cinzel', serif;
   height: 87vh;
+  /* overflow: overlay ; */
 }
 
 h1 {
@@ -158,7 +159,7 @@ li {
   height: 88vh;
 }
 
-.service {
+.serviceSharpening {
   display: flex;
   flex-direction: column;
   color: white;
@@ -167,7 +168,7 @@ li {
   border-radius: 10px;
   align-items: center;
   font-size: 18px;
-  width: 600px;
+  width: 94vw;
 }
 
 .service h2 {
@@ -176,13 +177,17 @@ li {
   margin: 5px auto;
 }
 
-.ser_img {
-  width: 580px;
+.ser_img, .ser_imgSharpening {
+  /* width: 580px; */
   /* height: 150px; */
   margin: 0 auto 5px auto;
   border-radius: 10px;
   border: 1px solid black;
   cursor: pointer;
+}
+
+.ser_imgSharpening {
+  height: 54vh;
 }
 
 .service p {
@@ -290,7 +295,9 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;}
+  justify-content: center;
+  overflow: overlay ;
+}
 
 #wtp {
   /* display: inline-flex; */
@@ -299,16 +306,25 @@ header {
   z-index: 1;
   background-repeat: no-repeat;
   margin: 0px 0vw 0 0vw;
-  height: 42vh;
+  height: 25vh;
   background-size: 100% 100%;
   filter: saturate(0.4);
 }
 
 #serv_name {
-  position: fixed;
-  z-index: 5;
-  font-size: 2em;
-  margin: 10px 20px;
+  display: inline-block;
+  contain: content;
+  color: white;
+  vertical-align: top;
+  margin: 10px;
+  width: 40vw;
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 3em;
+  text-align: center;
+  min-width: 400px;
 }
 
 #serv_img {
@@ -340,11 +356,12 @@ header {
   vertical-align: top;
   margin: 10px;
   float: right;
-  width: 50vw;
+  width: 48vw;
   border: 1px solid white;
   background: rgba(0, 0, 0, 0.5);
   padding: 5px;
   border-radius: 10px;
+  min-width: 400px;
 }
 
 p {

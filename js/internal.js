@@ -1,8 +1,15 @@
 // document.getElementById("services").addEventListener('click', displayservices)
 document.getElementById("hp_logo").addEventListener('click', goHome)
-       
+let selectedImage = document.querySelectorAll(".ser_img")
+
+selectedImage.forEach(el => {
+    el.addEventListener('click', showFullImage)
+})
+// .addEventListener('click', showFullImage)
 
 
+
+// console.log(selectedImage)
 // function displayservices () {
 //     const serv_list = document.getElementById("services_list")
 
@@ -16,4 +23,9 @@ document.getElementById("hp_logo").addEventListener('click', goHome)
 
 function goHome() {
     open("index.html", '_self')
+}
+
+function showFullImage() {
+    console.log("It worked!")
+    console.log(this)
 }
