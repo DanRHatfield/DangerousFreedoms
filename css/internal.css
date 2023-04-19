@@ -41,6 +41,7 @@ menu ul {
 #hp_logo {
   height: 10vh;
   margin: 0 1vw;
+  cursor: pointer;
 }
 
 header {
@@ -294,7 +295,7 @@ header {
   z-index: 1;
   background-repeat: no-repeat;
   margin: 0px 0vw 0 0vw;
-  height: 35vh;
+  height: 25vh;
   background-size: 100% 100%;
   filter: saturate(0.4);
 }

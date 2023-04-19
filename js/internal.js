@@ -1,5 +1,6 @@
 // document.getElementById("services").addEventListener('click', displayservices)
 document.getElementById("hp_logo").addEventListener('click', goHome)
+       
 
 
 // function displayservices () {
