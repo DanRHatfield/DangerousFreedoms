@@ -160,12 +160,12 @@ li {
   display: flex;
   flex-direction: column;
   color: white;
-  width: 400px;
   margin: 20px 0 0 0;
   padding: 10px;
   border-radius: 10px;
   align-items: center;
   font-size: 18px;
+  width: 600px;
 }
 
 .service h2 {
@@ -175,8 +175,8 @@ li {
 }
 
 .ser_img {
-  width: 280px;
-  height: 150px;
+  width: 580px;
+  /* height: 150px; */
   margin: 0 auto 5px auto;
   border-radius: 10px;
   border: 1px solid black;
@@ -282,7 +282,10 @@ header {
   position: relative;
   z-index: 1;
   overflow: auto;
-}
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;}
 
 #wtp {
   /* display: inline-flex; */
@@ -297,21 +300,33 @@ header {
 }
 
 #serv_img {
-  width: 35vw;
+  /* width: 35vw;
   height: 18vh;
   position: relative;
   margin: 5px;
   border-radius: 10px;
   border: 1px solid white;
+  display: inline-block; */
+  width: 35vw;
+  height: 8vh;
+  position: relative;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid white;
   display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: xxx-large;
+  padding: 5px;
+  text-align: center;
 }
 
 #serv_desc {
-  height: 18vh;
+  /* height: 18vh; */
   contain: content;
   color: white;
   vertical-align: top;
-  margin: 5px;
+  margin: 10px;
   float: right;
   width: 50vw;
   border: 1px solid white;
