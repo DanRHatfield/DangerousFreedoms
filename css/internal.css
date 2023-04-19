@@ -295,9 +295,16 @@ header {
   z-index: 1;
   background-repeat: no-repeat;
   margin: 0px 0vw 0 0vw;
-  height: 25vh;
+  height: 42vh;
   background-size: 100% 100%;
   filter: saturate(0.4);
+}
+
+#serv_name {
+  position: fixed;
+  z-index: 5;
+  font-size: 2em;
+  margin: 10px 20px;
 }
 
 #serv_img {
@@ -308,17 +315,17 @@ header {
   border-radius: 10px;
   border: 1px solid white;
   display: inline-block; */
-  width: 35vw;
-  height: 8vh;
+  /* width: 35vw; */
+  height: 22vh;  
   position: relative;
   margin: 10px;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 1px solid black;
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: xxx-large;
-  padding: 5px;
+  /* padding: 5px; */
   text-align: center;
 }
 
