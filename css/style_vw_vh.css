@@ -15,7 +15,8 @@ body {
 header, h1 {
   display: flex;
   align-items: center;
-  font-family: 'Monsieur La Doulaise', cursive;
+  /* font-family: 'Monsieur La Doulaise', cursive; */
+  font-family: 'Deutsche Zierschrift', sans-serif;
   background: white;
   height: 16vh;
 }
