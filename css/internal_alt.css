@@ -296,7 +296,8 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  overflow: overlay ;
+  /* overflow: overlay ; */
+  height: 62vh;
 }
 
 #wtp {

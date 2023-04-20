@@ -151,12 +151,10 @@ ul {
 
   #hp_middle {
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  
-  menu {
-    margin: 0;
-  }  
 
   menu {
     line-height: 2em;
@@ -169,8 +167,6 @@ ul {
   }
 
   menu {
-    margin: auto;
-    float: none;
     margin-top: 45vh;
   }
 }
@@ -179,26 +175,11 @@ ul {
   h1 {
     /* font-size: 8vw; */
   }
-  #hp_middle {
-    background-size: cover;
-  }
-
-  menu {
-    margin: 0;
-  }  
 
   menu ul {
     line-height: 2em;
     margin: 53vh 0 0 0;
     text-align: center;
-  }
-
-  menu {
-    margin: auto;
-    float: none;
-    margin-top: 45vh;
-    width: 250px;
-
   }
 
   #services_list {
@@ -226,8 +207,7 @@ ul {
   }
 
   #hp_middle {
-    /* background-size: 860px; */
-    background-size: cover;
+    /* background-size: cover; */
   }
   menu, ul {
     color: white;  
@@ -247,7 +227,7 @@ ul {
 @media screen and (max-width: 375px) {
 
   #hp_middle {
-    background-size: cover;
+    /* background-size: cover; */
   }
 
   menu ul {
