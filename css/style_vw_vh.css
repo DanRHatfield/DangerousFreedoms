@@ -36,6 +36,7 @@ footer {
   text-align: center;
   color: white;
   /* height: 2vh; */
+  padding: 5px 0 0 0;
 }
 
 #hp_middle {
@@ -150,6 +151,7 @@ ul {
   }
 
   #hp_middle {
+    /* background-size: 1300px 600px; */
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -187,7 +189,7 @@ ul {
   }
 }
 
-
+/*
 @media screen and (max-width: 420px) {
   body {
     overflow-x: hidden;
@@ -207,7 +209,7 @@ ul {
   }
 
   #hp_middle {
-    /* background-size: cover; */
+    // background-size: cover;
   }
   menu, ul {
     color: white;  
@@ -218,11 +220,12 @@ ul {
   }
 
   footer {
-    /* font-size: 5rem; */
+    // font-size: 5rem; 
     width: 80%;
     margin: auto;
   }
 }
+*/
 
 @media screen and (max-width: 375px) {
 
@@ -257,5 +260,299 @@ ul {
 
   #hp_middle {
     height: calc(100vh - 14vh)
+  }
+}
+
+/* Galaxy Fold: 280 x 653 */
+@media screen and (max-width: 280px) and (max-height: 653px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 { 
+    height: 6vh;
+  }
+
+  h1 {
+    font-size: clamp(25px, 3vw, 45px)
+  }
+
+  #services_list li {
+    padding: 2px 10px;
+  }
+
+  menu {
+    margin-top: 52vh;
+    font-size: 1.8em
+  }
+
+  menu ul {
+      letter-spacing: 0px;
+  }
+
+  main {
+    height: calc((100vh - 12vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 12vh);
+    background-size: 660px 600px;
+  }
+
+  footer {
+    font-size: .85rem;
+  }
+}
+
+/* Samsung Galaxy S8: 360 x 740 */
+@media screen and (max-width: 360px) and (max-height: 740px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 { 
+    height: 10vh;
+  }
+
+  h1 {
+    font-size: clamp(25px, 9vw, 45px)
+  }
+
+  #services_list li {
+    padding: 2px 10px;
+  }
+
+  menu {
+    margin-top: 52vh;
+    font-size: 1.8em
+  }
+
+  menu ul {
+      letter-spacing: 0px;
+  }
+
+  main {
+    height: calc((100vh - 13vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 13vh);
+    background-size: 860px 660px;
+    }
+
+  footer {
+    font-size: .85rem;
+  }
+}
+
+/* iPhone SE: 375 x 667  */
+@media screen and (max-width: 375px) and (max-height: 667px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 { 
+    height: 6vh;
+  }
+
+  h1 {
+    font-size: clamp(25px, 3vw, 45px)
+  }
+
+  #services_list li {
+    padding: 2px 10px;
+  }
+
+  menu {
+    margin-top: 52vh;
+    font-size: 1.8em
+  }
+
+  menu ul {
+      letter-spacing: 0px;
+  }
+
+  main {
+    height: calc((100vh - 12vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 12vh);
+    background-size: 910px 600px;
+    }
+
+  footer {
+    font-size: .85rem;
+  }
+}
+
+/* Pixel 5: 393 x 851 */
+@media screen and (max-width: 393px) and (max-height: 851px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 { 
+    height: 10vh;
+  }
+
+  h1 {
+    font-size: clamp(25px, 9vw, 45px)
+  }
+
+  #services_list li {
+    padding: 2px 10px;
+  }
+
+  menu {
+    margin-top: 52vh;
+    font-size: 1.8em
+  }
+
+  menu ul {
+      letter-spacing: 0px;
+  }
+
+  main {
+    height: calc((100vh - 13vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 13vh);
+    background-size: 960px 740px;
+    }
+
+  footer {
+    font-size: .85rem;
+  }
+}
+
+/* Samsung Galaxy: 412 x 915 */
+@media screen and (max-width: 412px) and (max-height: 915px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 { 
+    height: 10vh;
+  }
+
+  h1 {
+    font-size: clamp(25px, 9vw, 45px)
+  }
+
+  #services_list li {
+    padding: 2px 10px;
+  }
+
+  menu {
+    margin-top: 52vh;
+    font-size: 1.8em
+  }
+
+  menu ul {
+      letter-spacing: 0px;
+  }
+
+  main {
+    height: calc((100vh - 13vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 13vh);
+    background-size: 1000px 800px;
+    }
+
+  footer {
+    font-size: .85rem;
+  }
+}
+
+/* iPhone XR: 414 x 896 */
+@media screen and (max-width: 414px) and (max-height: 896px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 { 
+    height: 10vh;
+  }
+
+  h1 {
+    font-size: clamp(25px, 10vw, 45px)
+  }
+
+  #services_list li {
+    padding: 2px 10px;
+  }
+
+  menu {
+    margin-top: 52vh;
+    font-size: 1.8em
+  }
+
+  menu ul {
+      letter-spacing: 0px;
+  }
+
+  main {
+    height: calc((100vh - 13vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 13vh);
+    background-size: 1300px 660px;
+    }
+
+  footer {
+    font-size: .85rem;
+  }
+}
+
+/* Surface Duo: 540 x 720 */
+@media screen and (max-width: 540px) and (max-height: 720px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 { 
+    height: 10vh;
+  }
+
+  h1 {
+    font-size: clamp(25px, 10vw, 45px)
+  }
+
+  #services_list li {
+    padding: 2px 10px;
+  }
+
+  menu {
+    margin-top: 52vh;
+    font-size: 1.8em
+  }
+
+  menu ul {
+      letter-spacing: 0px;
+  }
+
+  main {
+    height: calc((100vh - 13vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 13vh);
+    background-size: 1300px 660px;
+    }
+
+  footer {
+    font-size: .85rem;
   }
 }

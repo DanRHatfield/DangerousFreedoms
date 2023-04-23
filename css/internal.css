@@ -124,8 +124,10 @@ li {
 }
 
 .about {
-  width: 400px;
-  height: 300px;
+  /* width: 400px; */
+  /* height: 300px; */
+  width: clamp(220px, 40vw, 500px);
+  /* height: clamp(132px, 35vh, 300px); */
   float: left;
   margin: 3px 10px;
   border: 1px solid black;
