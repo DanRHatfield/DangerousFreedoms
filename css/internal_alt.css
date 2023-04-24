@@ -51,15 +51,12 @@ header {
   height: 10vh;
   position: relative;
   z-index: 1;
-  /* font-family: 'Monsieur La Doulaise', cursive; */
   font-family: 'Deutsche Zierschrift', sans-serif;
 }
 
 main {
-  /* font-family: 'Alex Brush', cursive; */
   font-family: 'Cinzel', serif;
   height: 87vh;
-  /* overflow: overlay ; */
 }
 
 h1 {
@@ -325,14 +322,6 @@ header {
 }
 
 #serv_img {
-  /* width: 35vw;
-  height: 18vh;
-  position: relative;
-  margin: 5px;
-  border-radius: 10px;
-  border: 1px solid white;
-  display: inline-block; */
-  /* width: 35vw; */
   height: 22vh;  
   position: relative;
   margin: 10px;
@@ -342,12 +331,10 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: xxx-large;
-  /* padding: 5px; */
   text-align: center;
 }
 
 #serv_desc {
-  /* height: 18vh; */
   contain: content;
   color: white;
   vertical-align: top;
@@ -371,7 +358,6 @@ p {
   }
 
   #hp_middle {
-    /* background-size: cover; */
     background-size: 100% 100%;
   }  
 }
@@ -382,7 +368,6 @@ p {
   }
 
   #hp_middle {
-    /* background-size: cover; */
     background-size: 100% 100%;
   }
 }
@@ -391,7 +376,6 @@ p {
 
   #hp_middle {
     background-size: cover;
-    /* background-size: 100% 100%; */
   }
   
   menu, ul {
@@ -425,323 +409,89 @@ p {
 
 }
 
-@media screen and (max-width: 420px) {
+
+/* Surface Duo: 540 x 720 */
+@media screen and (max-width: 540px) and (max-height: 720px) {
+
+  header, #hp_logo {
+    height: 10vh;
+  }
+
   h1 {
-    /* font-size: 10vw; */
     font-size: 8vw;
   }
 
-  #hp_middle {
-    background-size: 100vh;
-  }
-  menu, ul {
-    color: white;  
+  .menu ul {
+    line-height: 19px;
   }
 
-  menu ul {
-    line-height: 2em;
-  }
-
-  #wtp {
-    display: inline-flex;
-    width: 100vw;
-    flex-direction: column;
-  }
-
-  #serv_img, #serv_desc {
-    height: 10vh;
-    margin: 5px 5px 0 5px;
-    width: auto;
-  }
-
-  #serv_desc {    
+  #serv_name {
     margin: 5px;
+    min-width: 98vw;
+    padding: 0px;
+    font-size: 3em;
+  }
+
+  #serv_desc {
+    margin: 108px 5px 0 5px;
+    font-size: 0.85em;
+    min-width: 98vw;
+    height: auto;
+  }
+
+  #verbiage {
+    overflow: visible;
+    display: block;
+}
+
+  .serviceSharpening {
+    margin: 100px 0 0 0;
+    padding: 0;
+    width: 100vw;
+}
+
+  .ser_imgSharpening {
+    height: auto;
+    width: clamp(300px,94vw, 800px);
+  }
+
+  .bio {
+    width: 92vw;
+    background: tan;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 15px 0 0 0;
+    border: 2px solid white;
+    text-shadow: 0 0 black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .about {
-    width: 82vw;
-    height: 30vh;
-  }
-}
-/* 
-@media screen and (max-width: 375px) {
-  #hp_middle {
-    background-size: 860px;
-  }
-
-  menu ul {
-    line-height: 2em;
-    margin: 49vh 0 0 0;
-    letter-spacing: 2px;
-  }
-
-} */
-
-@media screen and (max-width: 375px) and (max-height: 667px) {
-
-  header {
-    height: 6vh;
-  }
-
-  #hp_logo {
-    height: 6vh;
-  }
-
-  h1 {
-    font-size: 8vw;
-  }
-
-  .menu ul {
-    line-height: 19px;
-  }
-
-  #serv_name {
-    margin: 5px;
-    min-width: 97vw;
-    padding: 0px;
-    font-size: 1.7em;
-  }
-
-  #serv_desc {
-    margin: 125px 5px 0 5px;
-    font-size: 0.85em;
-    min-width: 97vw;
+    width: clamp(250px, 86vw, 400px);
     height: auto;
-  }
-
-  .serviceSharpening {
-    margin: 150px 0 0 0;
-    padding: 0;
-  }
-
-  .ser_imgSharpening {
-    height: auto;
-    width: clamp(300px,94vw, 800px);
+    float: left;
+    margin: 3px 10px;
+    border: 1px solid black;
   }
 }
 
-
-/* Galaxy Fold: 280 x 653 */
-@media screen and (max-width: 280) and (max-height: 653px) {
-
-  header {
-    height: 6vh;
-  }
-
-  #hp_logo {
-    height: 6vh;
-  }
-
-  h1 {
-    font-size: 8vw;
-  }
-
-  .menu ul {
-    line-height: 19px;
-  }
-
-  #serv_name {
-    margin: 5px;
-    min-width: 97vw;
-    padding: 0px;
-    font-size: 1.7em;
-  }
-
-  #serv_desc {
-    margin: 125px 5px 0 5px;
-    font-size: 0.85em;
-    min-width: 97vw;
+@media screen {
+  .about {
+    width: clamp(250px, 86vw, 400px);
     height: auto;
+    margin: 3px 10px;
+    border: 1px solid black;
   }
 
-  .serviceSharpening {
-    margin: 150px 0 0 0;
-    padding: 0;
-  }
-
-  .ser_imgSharpening {
-    height: auto;
-    width: clamp(300px,94vw, 800px);
-  }
-}
-/* Samsung Galaxy S8: 360 x 740 */
-@media screen and (max-width: 360) and (max-height: 740px) {
-
-  header {
-    height: 6vh;
-  }
-
-  #hp_logo {
-    height: 6vh;
-  }
-
-  h1 {
-    font-size: 8vw;
-  }
-
-  .menu ul {
-    line-height: 19px;
-  }
-
-  #serv_name {
-    margin: 5px;
-    min-width: 97vw;
-    padding: 0px;
-    font-size: 1.7em;
-  }
-
-  #serv_desc {
-    margin: 125px 5px 0 5px;
-    font-size: 0.85em;
-    min-width: 97vw;
-    height: auto;
-  }
-
-  .serviceSharpening {
-    margin: 150px 0 0 0;
-    padding: 0;
-  }
-
-  .ser_imgSharpening {
-    height: auto;
-    width: clamp(300px,94vw, 800px);
-  }
-}
-
-/* iPhone SE: 375 x 667  */
-@media screen and (max-width: 375px) and (max-height: 667px) {
-
-  header {
-    height: 6vh;
-  }
-
-  #hp_logo {
-    height: 6vh;
-  }
-
-  h1 {
-    font-size: 8vw;
-  }
-
-  .menu ul {
-    line-height: 19px;
-  }
-
-  #serv_name {
-    margin: 5px;
-    min-width: 97vw;
-    padding: 0px;
-    font-size: 1.7em;
-  }
-
-  #serv_desc {
-    margin: 125px 5px 0 5px;
-    font-size: 0.85em;
-    min-width: 97vw;
-    height: auto;
-  }
-
-  .serviceSharpening {
-    margin: 150px 0 0 0;
-    padding: 0;
-  }
-
-  .ser_imgSharpening {
-    height: auto;
-    width: clamp(300px,94vw, 800px);
-  }
-}
-
-/* Pixel 5: 393 x 851 */
-@media screen and (max-width: 393) and (max-height: 851px) {
-
-  header {
-    height: 6vh;
-  }
-
-  #hp_logo {
-    height: 6vh;
-  }
-
-  h1 {
-    font-size: 8vw;
-  }
-
-  .menu ul {
-    line-height: 19px;
-  }
-
-  #serv_name {
-    margin: 5px;
-    min-width: 97vw;
-    padding: 0px;
-    font-size: 1.7em;
-  }
-
-  #serv_desc {
-    margin: 125px 5px 0 5px;
-    font-size: 0.85em;
-    min-width: 97vw;
-    height: auto;
-  }
-
-  .serviceSharpening {
-    margin: 150px 0 0 0;
-    padding: 0;
-  }
-
-  .ser_imgSharpening {
-    height: auto;
-    width: clamp(300px,94vw, 800px);
-  }
-}
-
-/* Samsung Galaxy: 412 x 915 */
-@media screen and (max-width: 412px) and (max-height: 915px) {
-
-  header {
-    height: 6vh;
-  }
-
-  #hp_logo {
-    height: 6vh;
-  }
-
-  h1 {
-    font-size: 8vw;
-  }
-
-  .menu ul {
-    line-height: 19px;
-  }
-
-  #serv_name {
-    margin: 5px;
-    min-width: 97vw;
-    padding: 0px;
-    font-size: 1.7em;
-  }
-
-  #serv_desc {
-    margin: 125px 5px 0 5px;
-    font-size: 0.85em;
-    min-width: 97vw;
-    height: auto;
-  }
-
-  .serviceSharpening {
-    margin: 150px 0 0 0;
-    padding: 0;
-  }
-
-  .ser_imgSharpening {
-    height: auto;
-    width: clamp(300px,94vw, 800px);
+  .bio {
+    padding: 8px 0;
   }
 }
 
 /* iPhone XR: 414 x 896 */
-@media screen and (max-width: 414px) and (max-height: 896px) {
+@media (max-width: 414px) and (max-height: 896px) {
 
   header {
     height: 6vh;
@@ -757,6 +507,10 @@ p {
 
   .menu ul {
     line-height: 26px;
+  }
+
+  .menu ul li ul {
+    width: auto;
   }
 
   #wtp {
@@ -791,8 +545,208 @@ p {
   }
 }
 
-/* Surface Duo: 540 x 720 */
-@media screen and (max-width: 540px) and (max-height: 720px) {
+/* Samsung Galaxy: 412 x 915 */
+@media (max-width: 412px) and (max-height: 915px) {
+
+  header {
+    height: 6vh;
+  }
+
+  #hp_logo {
+    height: 6vh;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+
+  .menu ul {
+    line-height: 26px;
+  }
+
+  .menu ul li ul {
+    width: auto;
+  }
+
+  #wtp {
+    display: inline-flex;
+    width: 100vw;
+    flex-direction: column;
+    height: 21vh;
+}
+
+  #serv_name {
+    margin: 5px;
+    min-width: 97vw;
+    padding: 0px;
+    font-size: 3em;
+  }
+
+  #serv_desc {
+    margin: 125px 5px 0 5px;
+    font-size: 0.85em;
+    min-width: 97vw;
+    height: auto;
+  }
+
+  .serviceSharpening {
+    margin: 150px 0 0 0;
+    padding: 0;
+  }
+
+  .ser_imgSharpening {
+    height: auto;
+    width: clamp(300px,94vw, 800px);
+  }
+}
+
+/* Pixel 5: 393 x 851 */
+@media (max-width: 393px) and (max-height: 851px) {
+
+  header {
+    height: 6vh;
+  }
+
+  #hp_logo {
+    height: 6vh;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+
+  .menu ul {
+    line-height: 25px;
+  }
+
+  .menu ul li ul {
+    width: auto;
+  }
+
+  #serv_name {
+    margin: 5px;
+    min-width: 97vw;
+    padding: 0px;
+    font-size: 2.5em;
+  }
+
+  #serv_desc {
+    margin: 118px 5px 0 5px;
+    font-size: 0.85em;
+    min-width: 97vw;
+    height: auto;
+  }
+
+  .serviceSharpening {
+    margin: 150px 0 0 0;
+    padding: 0;
+  }
+
+  .ser_imgSharpening {
+    height: auto;
+    width: clamp(300px,94vw, 800px);
+  }
+}
+
+/* iPhone SE: 375 x 667  */
+@media (max-width: 376px) and (max-height: 668px) {
+
+  header {
+    height: 6vh;
+  }
+
+  #hp_logo {
+    height: 6vh;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+
+  .menu ul {
+    line-height: 19px;
+  }
+
+  .menu ul li ul {
+    top: 18px;
+    width: auto;
+  }
+
+  #serv_name {
+    margin: 5px;
+    min-width: 97vw;
+    padding: 0px;
+    font-size: 2.5em;
+  }
+
+  #serv_desc {
+    margin: 80px 5px 0 5px;
+    font-size: 0.85em;
+    min-width: 97vw;
+    height: auto;
+  }
+
+  .serviceSharpening {
+    margin: 150px 0 0 0;
+    padding: 0;
+  }
+
+  .ser_imgSharpening {
+    height: auto;
+    width: clamp(300px,94vw, 800px);
+  }
+}
+
+/* Samsung Galaxy S8: 360 x 740 */
+@media screen and (max-width: 360px) and (max-height: 740px) {
+
+  header {
+    height: 6vh;
+  }
+
+  #hp_logo {
+    height: 6vh;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
+
+  .menu ul {
+    line-height: 22px;
+  }
+
+  .menu ul li ul {
+    width: auto;
+}
+
+  #serv_name {
+    margin: 5px;
+    min-width: 97vw;
+    padding: 0px;
+    font-size: 2em;
+  }
+
+  #serv_desc {
+    margin: 105px 5px 0 5px;
+    font-size: 0.85em;
+    min-width: 97vw;
+    height: auto;
+  }
+
+  .serviceSharpening {
+    margin: 150px 0 0 0;
+    padding: 0;
+  }
+
+  .ser_imgSharpening {
+    height: auto;
+    width: clamp(300px,94vw, 800px);
+  }
+}
+
+/* Galaxy Fold: 280 x 653 */
+@media screen and (max-width: 280px) and (max-height: 653px) {
 
   header {
     height: 6vh;
@@ -814,12 +768,12 @@ p {
     margin: 5px;
     min-width: 97vw;
     padding: 0px;
-    font-size: 1.7em;
+    font-size: 2em;
   }
 
   #serv_desc {
-    margin: 125px 5px 0 5px;
-    font-size: 0.85em;
+    margin: 87px 5px 0 5px;
+    font-size: 0.75em;
     min-width: 97vw;
     height: auto;
   }
@@ -831,7 +785,10 @@ p {
 
   .ser_imgSharpening {
     height: auto;
-    width: clamp(300px,94vw, 800px);
+    width: clamp(250px,94vw, 800px);
+  }
+
+  .menu ul li a {
+    font-size: 9px;
   }
 }
-
