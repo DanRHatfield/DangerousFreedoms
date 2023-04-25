@@ -419,9 +419,9 @@ p {
   }
 
   footer {
-    background-color: #D3BDA3;
+    background-color: white; /* #D3BDA3 */
     text-align: center;
-    color: white;
+    color: black;
     height: 2vh;
     position: absolute;
     bottom: 0;
