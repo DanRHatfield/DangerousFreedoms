@@ -1,0 +1,120 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#hp_middle {
+  background-image: url(../img/flagslogan.jpg);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-size: 100vw;
+}
+
+menu, ul {
+  margin: 0;
+  padding: 0;  
+  color: white;  
+}
+
+menu ul {
+  list-style-type: none;
+  font-size: 2em;
+  line-height: 4em;
+  text-align: center;
+  margin: 20vh 0 0 0;
+}
+
+/* Index page */
+
+#hp_logo {
+  width: 12vw;
+  margin: 0 2vw;
+}
+
+#hp_top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  display: inline-block;
+  margin: auto;
+  font-size: 5em;
+  width: 75.5vw;
+  border: 1px solid red;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 980px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    /* font-size: 3em; */
+    font-size: 8vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  h1 {
+    /* font-size: 2.5em; */
+    font-size: 8vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    /* font-size: 2em; */
+    font-size: 8vw;
+  }
+}
+
+
+
+@media screen and (max-width: 400px) {
+  h1 {
+    /* font-size: 1.9em; */
+    font-size: 8vw;
+  }
+
+  #hp_middle {
+    background-size: 100vh;
+  }
+  menu, ul {
+    color: white;  
+  }
+
+  menu ul {
+    line-height: 2em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  #hp_middle {
+    background-size: 860px;
+  }
+
+
+  menu ul {
+    line-height: 2em;
+    margin: 49vh 0 0 0;
+    letter-spacing: 2px;
+  }
+}
