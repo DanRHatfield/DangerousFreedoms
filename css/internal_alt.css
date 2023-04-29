@@ -428,6 +428,10 @@ p {
     width: 100vw;
     z-index: 2;
   }
+
+  #vpResult {
+    display: none;
+  }
 }
 
 /* Width < 850 px */
@@ -673,9 +677,6 @@ p {
     width: clamp(300px,94vw, 800px);
   }
 
-  #vpResult {
-    display: none;
-  }
 }
 
 /* Pixel 5: 393 x 851 */
