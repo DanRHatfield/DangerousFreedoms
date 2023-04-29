@@ -672,6 +672,10 @@ p {
     height: auto;
     width: clamp(300px,94vw, 800px);
   }
+
+  #vpResult {
+    display: none;
+  }
 }
 
 /* Pixel 5: 393 x 851 */
