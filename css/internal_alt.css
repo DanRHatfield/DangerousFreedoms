@@ -620,7 +620,7 @@ p {
 }
 
 /* Samsung Galaxy: 412 x 915 */
-@media (max-width: 412px) and (max-height: 915px) {
+@media (max-width: 412px) and (max-height: 715px) {
 
   header {
     height: 6vh;
@@ -635,7 +635,7 @@ p {
   }
 
   .menu ul {
-    line-height: 26px;
+    line-height: 20px;
   }
 
   .menu ul li ul {
@@ -657,7 +657,7 @@ p {
   }
 
   #serv_desc {
-    margin: 125px 5px 0 5px;
+    margin: 80px 5px 0 5px;
     font-size: 0.85em;
     min-width: 97vw;
     height: auto;
