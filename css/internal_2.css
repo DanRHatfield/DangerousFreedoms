@@ -362,7 +362,7 @@ p {
     background-color: white; /* #D3BDA3 */
     text-align: center;
     color: black;
-    height: 3vh;
+    height: auto;
     position: absolute;
     bottom: 0;
     width: 100vw;
