@@ -51,12 +51,14 @@ header {
   height: 10vh;
   position: relative;
   z-index: 1;
+  /* font-family: 'Monsieur La Doulaise', cursive; */
   font-family: 'Deutsche Zierschrift', sans-serif;
 }
 
 main {
+  /* font-family: 'Alex Brush', cursive; */
   font-family: 'Cinzel', serif;
-  height: 85vh;
+  height: 87vh;
 }
 
 h1 {
@@ -69,6 +71,13 @@ h1 {
   font-weight: 100;
 }
 
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  height: 2vh;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -78,12 +87,16 @@ a {
 
 #services_middle {
   width: 100%;
-  height: 85vh;
+  height: 87vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   overflow-y: overlay;
+}
+
+ul {
+  /* display: none; */
 }
 
 li {
@@ -111,8 +124,10 @@ li {
 }
 
 .about {
-  width: 400px;
-  height: 300px;
+  /* width: 400px; */
+  /* height: 300px; */
+  width: clamp(220px, 40vw, 500px);
+  /* height: clamp(132px, 35vh, 300px); */
   float: left;
   margin: 3px 10px;
   border: 1px solid black;
@@ -145,7 +160,7 @@ li {
   height: 88vh;
 }
 
-.serviceSharpening {
+.service {
   display: flex;
   flex-direction: column;
   color: white;
@@ -154,7 +169,7 @@ li {
   border-radius: 10px;
   align-items: center;
   font-size: 18px;
-  width: 94vw;
+  width: 600px;
 }
 
 .service h2 {
@@ -163,17 +178,13 @@ li {
   margin: 5px auto;
 }
 
-.ser_img, .ser_imgSharpening {
-  /* width: 580px; */
+.ser_img {
+  width: 580px;
   /* height: 150px; */
   margin: 0 auto 5px auto;
   border-radius: 10px;
   border: 1px solid black;
   cursor: pointer;
-}
-
-.ser_imgSharpening {
-  height: 54vh;
 }
 
 .service p {
@@ -281,10 +292,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  /* overflow: overlay ; */
-  height: 62vh;
-}
+  justify-content: center;}
 
 #wtp {
   /* display: inline-flex; */
@@ -293,28 +301,27 @@ header {
   z-index: 1;
   background-repeat: no-repeat;
   margin: 0px 0vw 0 0vw;
-  height: 25vh;
+  height: 42vh;
   background-size: 100% 100%;
   filter: saturate(0.4);
 }
 
 #serv_name {
-  display: inline-block;
-  contain: content;
-  color: white;
-  vertical-align: top;
-  margin: 10px;
-  width: 40vw;
-  border: 1px solid white;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 5px;
-  border-radius: 10px;
-  font-size: 3em;
-  text-align: center;
-  min-width: 400px;
+  position: fixed;
+  z-index: 5;
+  font-size: 2em;
+  margin: 10px 20px;
 }
 
 #serv_img {
+  /* width: 35vw;
+  height: 18vh;
+  position: relative;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid white;
+  display: inline-block; */
+  /* width: 35vw; */
   height: 22vh;  
   position: relative;
   margin: 10px;
@@ -324,128 +331,136 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   font-size: xxx-large;
+  /* padding: 5px; */
   text-align: center;
 }
 
 #serv_desc {
+  /* height: 18vh; */
   contain: content;
   color: white;
   vertical-align: top;
   margin: 10px;
   float: right;
-  width: 48vw;
+  width: 50vw;
   border: 1px solid white;
   background: rgba(0, 0, 0, 0.5);
   padding: 5px;
   border-radius: 10px;
-  min-width: 400px;
 }
 
 p {
   margin-bottom: 10px;
 }
 
-
-@media screen {
-  .about {
-    width: clamp(250px, 86vw, 400px);
-    height: auto;
-    margin: 3px 10px;
-    border: 1px solid black;
-  }
-
-  .bio {
-    padding: 8px 0;
-  }
-
-  footer {
-    background-color: white; /* #D3BDA3 */
-    text-align: center;
-    color: black;
-    height: 2vh;
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    z-index: 2;
-    font-size: 0.8em;
-  }
-
-  #vpResult {
-    display: none;
-  }
-
-  header {
-    height: clamp(3em,7vh,10vh);
-  }
-
-  #hp_logo {
-    height: 3em;
-  }
-
+@media screen and (max-width: 980px) {
   h1 {
-    font-size: 2em;
+    font-size: 6vh;
   }
 
-  .menu {
-    height: 1.5em;
+  #hp_middle {
+    /* background-size: cover; */
+    background-size: 100% 100%;
+  }  
 }
 
-  .menu ul {
-    height: 1.5em;
+@media screen and (max-width: 920px) {
+  h1 {
+    font-size: 5vh;
   }
 
-  .menu ul li ul li {
-    width: clamp(120px,100%,100%);
+  #hp_middle {
+    /* background-size: cover; */
+    background-size: 100% 100%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+
+  #hp_middle {
+    background-size: cover;
+    /* background-size: 100% 100%; */
+  }
+  
+  menu, ul {
+    margin: 0;
+  }  
+
+  menu ul {
+    line-height: 2em;
+    margin: 53vh 0 0 0;
+    text-shadow: 2px 2px 0px black;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #hp_middle {
+    background-size: cover;
+  }
+
+  menu, ul {
+    margin: 0;
+  }  
+
+  menu ul {
+    line-height: 2em;
+    margin: 53vh 0 0 0;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    /* font-size: 10vw; */
+    font-size: 8vw;
+  }
+
+  #hp_middle {
+    background-size: 100vh;
+  }
+  menu, ul {
+    color: white;  
+  }
+
+  menu ul {
+    line-height: 2em;
   }
 
   #wtp {
     display: inline-flex;
-    height: auto;
-    background-size: 100% 10em;
-    flex-direction: column;
     width: 100vw;
-  }
-
-  #serv_name {
-    margin: 5px auto;
-    width: 96vw;
-    font-size: clamp(1em,2.8em,10vh);
-    min-width: fit-content;
-  }
-
-  #serv_desc {
-    margin: 82px auto 0 auto;
-    width: 96vw;
-    min-width: auto;
-    font-size: clamp(10px, 12px, 12px);
-  }
-
-  #verbiage {
-    position: relative;
-    z-index: 1;
-    overflow: auto;
-    display: block;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 96vw;
-    margin: 5px auto;
+  }
+
+  #serv_img, #serv_desc {
+    height: 10vh;
+    margin: 5px 5px 0 5px;
+    width: auto;
+  }
+
+  #serv_desc {    
+    margin: 5px;
+  }
+
+  .about {
+    width: 82vw;
+    height: 30vh;
+  }
 }
 
-  .serviceSharpening {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    margin: auto;
-    padding: 0px;
-    border-radius: 0px;
-    align-items: center;
-    font-size: 18px;
-}
-
-  .ser_imgSharpening {
-    margin: auto;
-    width: 94vw;
-    height: auto;
+@media screen and (max-width: 375px) {
+  #hp_middle {
+    background-size: 860px;
   }
+
+  menu ul {
+    line-height: 2em;
+    margin: 49vh 0 0 0;
+    letter-spacing: 2px;
+  }
+
 }
