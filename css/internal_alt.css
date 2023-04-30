@@ -422,7 +422,7 @@ p {
     background-color: white; /* #D3BDA3 */
     text-align: center;
     color: black;
-    height: 2vh;
+    height: 3vh;
     position: absolute;
     bottom: 0;
     width: 100vw;
@@ -710,7 +710,8 @@ p {
   }
 
   #serv_desc {
-    margin: 118px 5px 0 5px;
+    /* margin: 118px 5px 0 5px; */
+    margin: 12.5vh 5px 0 5px;
     font-size: 0.85em;
     min-width: 97vw;
     height: auto;
