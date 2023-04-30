@@ -362,11 +362,12 @@ p {
     background-color: white; /* #D3BDA3 */
     text-align: center;
     color: black;
-    height: auto;
+    height: 3vh;
     position: absolute;
     bottom: 0;
     width: 100vw;
     z-index: 2;
+    font-size: 0.8em;
   }
 
   #vpResult {
