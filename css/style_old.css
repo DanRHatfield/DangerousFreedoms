@@ -1,0 +1,787 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+	padding: 0;
+	border: 0;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+}
+
+header, h1 {
+  display: flex;
+  align-items: center;
+  /* font-family: 'Monsieur La Doulaise', cursive; */
+  font-family: 'Deutsche Zierschrift', sans-serif;
+  background: white;
+  height: 16vh;
+}
+
+h1 {
+  margin: auto;
+  font-size: clamp(40px, 8vw, 90px);
+  contain: content;
+}
+
+main {
+  height: calc((100vh - 16vh) - 3vh);
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  /* height: 2vh; */
+  padding: 5px 0 0 0;
+}
+
+#hp_middle {
+  background-image: url(../img/flagslogan.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* height: 88vh; */
+  height: calc(100vh - 16vh - 2vh);
+}
+
+menu {
+  margin: 20px;
+  padding: 0;  
+  color: white;  
+  list-style-type: none;
+  font-size: 2em;
+  line-height: min(14vh, 4em);
+  text-align: right;
+  margin-top: calc(100vh - 2vh - 90vh);
+  text-shadow: 2px 2px 0px black;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  width: 200px;
+  float: right;
+  position: relative;
+ /* border: 1px solid white; */
+}
+
+/* Index page */
+
+#hp_logo {
+  height: 100%;
+  margin: 0 1vw;
+}
+
+/* #hp_top {
+  display: flex;
+  align-items: center;
+  font-family: 'Monsieur La Doulaise', cursive;
+  background: white;
+  height: 16vh;
+} */
+
+/* h1 {
+  display: inline-block;
+  margin: auto;
+  font-size: 5em;
+  width: 75.5vw;
+  text-align: center;
+} */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 2vw;
+}
+
+#services {
+  cursor: pointer;
+}
+
+#services_list {
+  display: none;
+  position: absolute;
+  text-align: center;
+  right: 200px;
+  background: rgba(255, 255, 255, .4);
+  /* border: 1px solid red; */
+  line-height: 1em;
+  padding: 0;
+  top: 0vh;
+  margin: 0;
+}
+
+#services_list li {
+  margin: auto;
+  padding: 5px 10px;
+  border-bottom: 1px solid black;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+/* From Internal css. */
+@media screen and (width >= 850px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  #vpResult {
+    display: none;
+  }
+
+  #serv_name {
+    font-size: clamp(2em, 4vw, 3em)
+  }
+
+  #serv_desc {
+    line-height: 1.1em;
+  }
+}
+
+/* From Internal css. */
+@media screen and (600px <= width < 850px) {
+  .about {
+    width: clamp(250px, 86vw, 400px);
+    height: auto;
+    margin: 3px 10px;
+    border: 1px solid black;
+  }
+
+  .bio {
+    padding: 8px 0;
+  }
+
+  footer {
+    background-color: white; /* #D3BDA3 */
+    text-align: center;
+    color: black;
+    height: 2vh;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: 2;
+    font-size: 0.8em;
+  }
+
+  #vpResult {
+    display: none;
+  }
+
+  header {
+    height: clamp(3em,7vh,10vh);
+  }
+
+  #hp_logo {
+    height: 4em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .menu {
+    height: 1.5em;
+}
+
+  .menu ul {
+    height: 1.5em;
+  }
+
+  .menu ul li ul li {
+    width: clamp(120px,100%,100%);
+  }
+
+  #wtp {
+    display: inline-flex;
+    height: auto;
+    background-size: 100% 12em;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  #serv_name {
+    display: block;
+    margin: 10px auto;
+    width: 98vw;
+    padding: 0px;
+    font-size: 3em;
+    text-align: center;
+    min-width: 280px;
+  }
+
+  #serv_desc {
+    display: block;
+    margin: 7em auto 2px auto;
+    width: 98vw;
+    padding: 2px 5px;
+    min-width: 280px;
+  }
+
+  #verbiage {
+    position: relative;
+    z-index: 1;
+    overflow: auto;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 96vw;
+    margin: 5px auto;
+}
+
+  .serviceContent {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: auto;
+    padding: 0px;
+    border-radius: 0px;
+    align-items: center;
+    font-size: 18px;
+}
+
+  .ser_imgSharpening {
+    margin: auto;
+    width: 94vw;
+    height: auto;
+  }
+}
+
+/* From Internal css. */
+@media screen and (width < 600px) {
+  .about {
+    width: clamp(250px, 86vw, 400px);
+    height: auto;
+    margin: 3px 10px;
+    border: 1px solid black;
+  }
+
+  .bio {
+    padding: 8px 0;
+  }
+
+  footer {
+    background-color: white; /* #D3BDA3 */
+    text-align: center;
+    color: black;
+    height: 2vh;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: 2;
+    font-size: 0.8em;
+  }
+
+  #vpResult {
+    display: none;
+  }
+
+  header {
+    height: clamp(3em,7vh,10vh);
+  }
+
+  #hp_logo {
+    height: 3em;
+  }
+
+  h1 {
+    font-size: clamp(1em,8vw,3em)
+  }
+
+  .menu {
+    height: 1.5em;
+}
+
+  .menu ul {
+    height: 1.5em;
+  }
+
+  .menu ul li ul li {
+    width: clamp(120px,100%,100%);
+  }
+
+  #wtp {
+    display: inline-flex;
+    height: auto;
+    background-size: 100% 10em;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  #serv_name {
+    margin: 5px auto;
+    width: 96vw;
+    font-size: clamp(1em,10vw,3em);
+    min-width: fit-content;
+  }
+
+  #serv_desc {
+    margin: 7.2em auto 0 auto;
+    width: 96vw;
+    min-width: auto;
+    font-size: clamp(10px, 12px, 12px);
+  }
+
+  #verbiage {
+    position: relative;
+    z-index: 1;
+    overflow: auto;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 96vw;
+    margin: 5px auto;
+}
+
+  .serviceContent {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: auto;
+    padding: 0px;
+    border-radius: 0px;
+    align-items: center;
+    font-size: 18px;
+}
+
+  .ser_imgSharpening {
+    margin: auto;
+    width: 94vw;
+    height: auto;
+  }
+}
+
+
+@media screen and (max-width: 980px) {
+  h1 {
+    /* font-size: 8vw; */
+  }
+
+  #hp_middle {
+    background-size: 100% 100%;
+  }
+  
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    /* font-size: 8vw; */
+  }
+
+  #hp_middle {
+    background-size: 100% 100%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  h1 {
+    /* font-size: 8vw; */
+  }
+
+  #hp_middle {
+    /* background-size: 1300px 600px; */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  menu {
+    line-height: 2em;
+    margin: 53vh 0 0 0;
+    margin-top: calc(100vh - 2vh - 90vh);
+    text-shadow: 2px 2px 0px black;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  menu {
+    margin-top: 45vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    /* font-size: 8vw; */
+  }
+
+  menu ul {
+    line-height: 2em;
+    margin: 53vh 0 0 0;
+    text-align: center;
+  }
+
+  #services_list {
+    position: initial;
+  }
+}
+
+/*
+@media screen and (max-width: 420px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 {
+    height: 8vh;
+  }
+
+  main {
+    height: calc((100vh - 8vh) - 5vh);
+  }
+  
+  h1 {
+    font-size: 9vw;
+  }
+
+  #hp_middle {
+    // background-size: cover;
+  }
+  menu, ul {
+    color: white;  
+  }
+
+  menu ul {
+    line-height: 2em;
+  }
+
+  footer {
+    // font-size: 5rem; 
+    width: 80%;
+    margin: auto;
+  }
+}
+*/
+
+@media screen and (max-width: 375px) {
+  menu ul {
+    line-height: 2em;
+    margin: 49vh 0 0 0;
+    letter-spacing: 2px;
+  }
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 {
+    height: 10vh;
+  }
+
+  h1 {
+    font-size: clamp(30px, 3vw, 45px)
+  }
+
+  main {
+    height: calc((100vh - 14vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 14vh)
+  }
+}
+
+/* Surface Duo: 540 x 720 */
+@media screen and (max-width: 540px) and (max-height: 720px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 { 
+    height: 10vh;
+  }
+
+  h1 {
+    font-size: clamp(25px, 10vw, 45px)
+  }
+
+  #services_list li {
+    padding: 2px 10px;
+  }
+
+  menu {
+    margin-top: 52vh;
+    font-size: 1.8em
+  }
+
+  menu ul {
+      letter-spacing: 0px;
+  }
+
+  main {
+    height: calc((100vh - 13vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 13vh);
+    background-size: 1300px 660px;
+    }
+
+  footer {
+    font-size: .85rem;
+  }
+}
+
+/* iPhone XR: 414 x 896 */
+@media screen and (max-width: 414px) and (max-height: 896px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 { 
+    height: 10vh;
+  }
+
+  h1 {
+    font-size: clamp(25px, 10vw, 45px)
+  }
+
+  #services_list li {
+    padding: 2px 10px;
+  }
+
+  menu {
+    margin-top: 52vh;
+    font-size: 1.8em
+  }
+
+  menu ul {
+      letter-spacing: 0px;
+  }
+
+  main {
+    height: calc((100vh - 13vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 13vh);
+    background-size: 1300px 660px;
+    }
+
+  footer {
+    font-size: .85rem;
+  }
+}
+
+/* Samsung Galaxy: 412 x 915 */
+@media screen and (max-width: 412px) and (max-height: 915px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 { 
+    height: 10vh;
+  }
+
+  h1 {
+    font-size: clamp(25px, 8vw, 45px)
+  }
+
+  #services_list li {
+    padding: 2px 10px;
+  }
+
+  menu {
+    margin-top: 52vh;
+    font-size: 1.8em
+  }
+
+  menu ul {
+      letter-spacing: 0px;
+  }
+
+  main {
+    height: calc((100vh - 13vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 13vh);
+    background-size: 1000px 800px;
+    }
+
+  footer {
+    font-size: .85rem;
+  }
+}
+
+/* Pixel 5: 393 x 851 */
+@media screen and (max-width: 393px) and (max-height: 851px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 { 
+    height: 10vh;
+  }
+
+  h1 {
+    font-size: clamp(25px, 9vw, 45px)
+  }
+
+  #services_list li {
+    padding: 2px 10px;
+  }
+
+  menu {
+    margin-top: 52vh;
+    font-size: 1.8em
+  }
+
+  menu ul {
+      letter-spacing: 0px;
+  }
+
+  main {
+    height: calc((100vh - 13vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 13vh);
+    background-size: 960px 740px;
+    }
+
+  footer {
+    font-size: .85rem;
+  }
+}
+
+/* iPhone SE: 375 x 667  */
+@media screen and ((max-width: 375px) and (max-height: 667px)) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 { 
+    height: 6vh;
+  }
+
+  h1 {
+    font-size: clamp(25px, 3vw, 45px)
+  }
+
+  #services_list li {
+    padding: 2px 10px;
+  }
+
+  menu {
+    margin-top: 52vh;
+    font-size: 1.8em
+  }
+
+  menu ul {
+      letter-spacing: 0px;
+  }
+
+  main {
+    height: calc((100vh - 12vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 12vh);
+    background-size: 910px 600px;
+    }
+
+  footer {
+    font-size: .85rem;
+  }
+}
+
+/* Samsung Galaxy S8: 360 x 740 */
+@media screen and (max-width: 360px) and (max-height: 740px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 { 
+    height: 10vh;
+  }
+
+  h1 {
+    font-size: clamp(25px, 9vw, 45px)
+  }
+
+  #services_list li {
+    padding: 2px 10px;
+  }
+
+  menu {
+    margin-top: 52vh;
+    font-size: 1.8em
+  }
+
+  menu ul {
+      letter-spacing: 0px;
+  }
+
+  main {
+    height: calc((100vh - 13vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 13vh);
+    background-size: 860px 660px;
+    }
+
+  footer {
+    font-size: .85rem;
+  }
+}
+
+/* Galaxy Fold: 280 x 653 */
+@media screen and (max-width: 280px) and (max-height: 653px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header, h1 { 
+    height: 6vh;
+  }
+
+  h1 {
+    font-size: clamp(25px, 3vw, 45px)
+  }
+
+  #services_list li {
+    padding: 2px 10px;
+  }
+
+  menu {
+    margin-top: 52vh;
+    font-size: 1.8em
+  }
+
+  menu ul {
+      letter-spacing: 0px;
+  }
+
+  main {
+    height: calc((100vh - 12vh));
+  }
+
+  #hp_middle {
+    height: calc(100vh - 12vh);
+    background-size: 660px 600px;
+  }
+
+  footer {
+    font-size: .85rem;
+  }
+}

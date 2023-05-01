@@ -2,32 +2,71 @@
 <html lang="en">
 	<head>
   	<meta charset="utf-8">
-  	<meta name="description" content="Contact Dangerous Freedom using one of the methods below.">
-  	<meta name="keywords" content="Dangerous Freedom, contact us, find us on Facebook, find us on Instagram">
+  	<meta name="description" content="Dangerous Freedom would love to hear from you.  Please contact us via one of the options below.">
+  	<meta name="keywords" content="Contact us">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Contact Us</title>
-
-		<link rel="stylesheet" href="css/style.css">
+		<title>Dangerous Freedoms - Contact Us</title>
+		<link rel="icon" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="css/internal.css">
+		<link href="https://fonts.cdnfonts.com/css/deutsche-zierschrift" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+		
 	</head>
 	<body>
+		<header>
+			<img id="hp_logo" src="img/Eagle_claws.png" alt="Dangerous Freedom logo">
+			<h1>Dangerous Freedoms</h1>
+		</header>
+		<div class="menu">
+			<ul>
+				<li><a href="#">Services</a>
+					<ul>
+						<li><a href="Hydro.html">Hydro</a></li>
+						<li><a href="Firearms.html">Firearms</a></li>
+						<li><a href="Sharpening.html">Sharpening</a></li>
+						<li><a href="Gunsmithing.html">Gunsmithing</a></li>
+						<li><a href="Kydex.html">Kydex</a></li>
+					</ul>
+				</li>
+			    <li><a href="about_us.html">About Us</a></li>
+				<li><a href="contact_us.html">Contact</a></li>
+				<li><a href="#">Links</a></li>
+			</ul>
+		</div>
 		<main>
-			<header>
-				<img id="hp_logo" src="img/Eagle_claws.png" alt="Dangerous Freedom logo">
-				<h1>Dangerous Freedoms</h1>
-			</header>
-			<menu id="insideMenu">
-				<a href="services.html">Services</a>
-				<a href="contact_us.html">Contact Us</a>
-				<a href="about_us.html">About Us</a>
-				<a href="links.html">Links</a>
-			</menu>
-			<section id="services_middle">
-				<P>Contact Us using the following methods:</P>
-
+			<section id="parchment"></section>
+			<section id="wtp">
+				<div id="serv_name"> Contact Us</div>
+				<span id="vpResult"></span>
+				<div id="serv_desc">We look forward to hearing from you.  Please contact us via one of the methods below.</div>
+			</section>
+			<section id="verbiage" class="services_middle">
+				<section class="serviceContent">
+					<address>
+						<p><b>Email:</b></p>
+						<p><b>Phone:</b> (406) 999-9999</p>
+						<p>
+							<b>Mailing Address:</b><br>
+							123456 A st<br>
+							Someplace In, MT<br>
+							596##
+						</p>						
+					</address>
+					<!-- <img class="ser_imgSharpening" src="img/Gunsmithing1.webp" alt=""> -->
+				</section>
 			</section>
 		</main>
-
-		<script type="text/javascript" src="js/main.js"></script>
+			
+		<svg>
+			<filter id="real1">
+				<feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1" />
+				<feDisplacementMap in="SourceGraphic" scale="20" />
+			</filter>
+		</svg>
+		<footer>
+			<span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Dangerous Freedom, All Rights Reserved</span>
+		</footer>
+		<script type="text/javascript" src="js/internal.js"></script>
 	</body>
 </html>

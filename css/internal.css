@@ -77,15 +77,15 @@ a {
 
 /* Services page */
 
-/* #services_middle {
+#services_middle {
   width: 100%;
-  height: 85vh;
+  height: 88vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   overflow-y: overlay;
-} */
+}
 
 li {
   float: left;
@@ -340,6 +340,12 @@ body {
 p {
   margin-bottom: 10px;
 }
+
+address {
+  color: black;
+  font-size: xx-large;
+}
+
 @media screen and (width >= 850px) {
   h1 {
     font-size: 4em;
