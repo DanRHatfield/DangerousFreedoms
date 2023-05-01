@@ -535,7 +535,7 @@ p {
   }
 
   #serv_desc {
-    margin: 82px auto 0 auto;
+    margin: 7.2em auto 0 auto;
     width: 96vw;
     min-width: auto;
     font-size: clamp(10px, 12px, 12px);
