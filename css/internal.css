@@ -36,8 +36,6 @@ menu ul {
   letter-spacing: 2px;
 }
 
-/* Index page */
-
 #hp_logo {
   height: 10vh;
   margin: 0 1vw;
@@ -74,8 +72,6 @@ a {
   text-decoration: none;
   color: white;
 }
-
-/* Services page */
 
 #services_middle {
   width: 100%;
@@ -135,8 +131,6 @@ li {
   color: blue;
 }
 
-/* Services page */
-
 #services_page {
   display: flex;
   flex-direction: row;
@@ -165,8 +159,6 @@ li {
 }
 
 .ser_img, .ser_imgSharpening {
-  /* width: 580px; */
-  /* height: 150px; */
   margin: 0 auto 5px auto;
   border-radius: 10px;
   border: 1px solid black;
@@ -181,8 +173,6 @@ li {
   margin: 0px;
   color: black;
 }
-
-/* Start Remove this */
 
 .menu{
   margin: 0;
@@ -243,11 +233,8 @@ li {
   border-bottom: 1px solid grey;
 }
 
-/* end Remove this */
-
 html, body {margin: 0; height: 100%; overflow: hidden}
 
-/* Test Body */
 #testbody {
   background-image: url(../img/we_the_people.jpg);
   height: 86vh;
@@ -278,12 +265,11 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /* overflow: overlay ; */
   height: 62vh;
+  align-content: flex-start;
 }
 
 #wtp {
-  /* display: inline-flex; */
   background-image: url(../img/we_the_people_400px.webp);
   position: relative;
   z-index: 1;
@@ -346,6 +332,7 @@ address {
   font-size: xx-large;
 }
 
+
 @media screen and (width >= 850px) {
   h1 {
     font-size: 4em;
@@ -361,6 +348,35 @@ address {
 
   #serv_desc {
     line-height: 1.1em;
+  }
+
+  
+  .twoColumn_content {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin: 20px 0 0 0;
+    padding: 10px;
+    border-radius: 0px;
+    align-items: inherit;
+    font-size: 18px;
+    width: 48%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+  }
+
+  .twoColumn_img, .threeColumn_img {
+    width: 100%;
+    height: max-content;
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  .threeColumn_content {
+      width: 30%;
   }
 }
 
