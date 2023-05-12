@@ -475,7 +475,7 @@ address {
     display: flex;
     flex-direction: column;
     color: white;
-    margin: auto;
+    margin: 0px auto 10px auto;
     padding: 0px;
     border-radius: 0px;
     align-items: center;
@@ -579,7 +579,7 @@ address {
     display: flex;
     flex-direction: column;
     color: white;
-    margin: auto;
+    margin: 0px auto 10px auto;
     padding: 0px;
     border-radius: 0px;
     align-items: center;
