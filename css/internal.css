@@ -332,6 +332,15 @@ address {
   font-size: xx-large;
 }
 
+.linkspage {
+  align-items: flex-start !important;
+  font-size: 3.5vw !important;
+}
+
+.linkspage a {
+  text-decoration: underline;
+  color: blue;
+}
 
 @media screen and (width >= 850px) {
   h1 {
@@ -377,6 +386,10 @@ address {
 
   .threeColumn_content {
       width: 30%;
+  }
+
+  .contactUs {
+    font-size: x-large
   }
 }
 
@@ -487,6 +500,10 @@ address {
     width: 94vw;
     height: auto;
   }
+
+  .contactUs {
+    font-size: 3.5vw;
+  }
 }
 
 @media screen and (width < 600px) {
@@ -590,5 +607,9 @@ address {
     margin: auto;
     width: 94vw;
     height: auto;
+  }
+
+  .contactUs {
+    font-size: 3.5vw;
   }
 }

@@ -2,32 +2,68 @@
 <html lang="en">
 	<head>
   	<meta charset="utf-8">
-  	<meta name="description" content="Your description goes here">
-  	<meta name="keywords" content="one, two, three">
+  	<meta name="description" content="Dangerous Freedom would love to hear from you.  Please contact us via one of the options below.">
+  	<meta name="keywords" content="Contact us">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Links page</title>
-
-		<link rel="stylesheet" href="css/style.css">
+		<title>Dangerous Freedoms - Contact Us</title>
+		<link rel="icon" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="css/internal.css">
+		<link href="https://fonts.cdnfonts.com/css/deutsche-zierschrift" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+		
 	</head>
 	<body>
+		<header>
+			<img id="hp_logo" src="img/DF_Logo1.webp" alt="Dangerous Freedom logo">			
+			<h1>Dangerous Freedoms</h1>
+		</header>
+		<div class="menu">
+			<ul>
+				<li><a href="#">Services</a>
+					<ul>
+						<li><a href="Hydro.html">Hydro</a></li>
+						<li><a href="Firearms.html">Firearms</a></li>
+						<li><a href="Sharpening.html">Sharpening</a></li>
+						<li><a href="Gunsmithing.html">Gunsmithing</a></li>
+						<li><a href="Kydex.html">Kydex</a></li>
+					</ul>
+				</li>
+			    <li><a href="about_us.html">About Us</a></li>
+				<li><a href="contact_us.html">Contact</a></li>
+				<li><a href="links.html">Links</a></li>
+			</ul>
+		</div>
 		<main>
-			<header>
-				<img id="hp_logo" src="img/DF_Logo1.webp" alt="Dangerous Freedom logo">			
-				<h1>Dangerous Freedoms</h1>
-			</header>
-			<menu id="insideMenu">
-				<a href="services.html">Services</a>
-				<a href="contact_us.html">Contact Us</a>
-				<a href="about_us.html">About Us</a>
-				<a href="links.html">Links</a>
-			</menu>
-			<section id="services_middle">
-				<p>Links to:</p>
-
+			<section id="parchment"></section>
+			<section id="wtp">
+				<div id="serv_name"> Links</div>
+				<span id="vpResult"></span>
+				<div id="serv_desc" style="visibility: hidden">Find us on Facebook and YouTube</div>
+			</section>
+			<section id="verbiage" class="services_middle">
+				<section class="serviceContent linkspage">
+					<p>
+						Find us on Facebook:<br>
+						<a href="https://www.facebook.com/DangerousFreedom2A">https://www.facebook.com/DangerousFreedom2A</a>					
+					</p>
+					<p>
+						Find us on YouTube:<br>
+						<a href="https://youtube.com/@DangerousFreedomLLC">https://youtube.com/@DangerousFreedomLLC</a>
+					</p>
+				</section>
 			</section>
 		</main>
-
-		<script type="text/javascript" src="js/main.js"></script>
+			
+		<svg>
+			<filter id="real1">
+				<feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1" />
+				<feDisplacementMap in="SourceGraphic" scale="20" />
+			</filter>
+		</svg>
+		<footer>
+			<span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Dangerous Freedom, All Rights Reserved</span>
+		</footer>
+		<script type="text/javascript" src="js/internal.js"></script>
 	</body>
 </html>
