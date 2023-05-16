@@ -280,7 +280,7 @@ body {
   filter: saturate(0.4);
 }
 
-#serv_name {
+#serv_name, #serv_name1 {
   display: inline-block;
   contain: content;
   color: white;
@@ -351,7 +351,7 @@ address {
     display: none;
   }
 
-  #serv_name {
+  #serv_name, #serv_name1 {
     font-size: clamp(2em, 4vw, 3em)
   }
 
@@ -454,7 +454,7 @@ address {
     width: 100vw;
   }
 
-  #serv_name {
+  #serv_name, #serv_name1 {
     display: block;
     margin: 10px auto;
     width: 98vw;
@@ -566,7 +566,7 @@ address {
     width: 100vw;
   }
 
-  #serv_name {
+  #serv_name, #serv_name1 {
     margin: 5px auto;
     width: 96vw;
     font-size: clamp(1em,10vw,3em);
