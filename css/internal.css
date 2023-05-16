@@ -342,6 +342,10 @@ address {
   color: blue;
 }
 
+.contactUs {
+  font-size: x-large
+}
+
 @media screen and (width >= 850px) {
   h1 {
     font-size: 4em;
