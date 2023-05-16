@@ -337,7 +337,7 @@ address {
   font-size: 3.5vw !important;
 }
 
-.linkspage a {
+.linkspage a, .contactUs a {
   text-decoration: underline;
   color: blue;
 }
