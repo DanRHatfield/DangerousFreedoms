@@ -389,7 +389,7 @@ address {
   }
 
   .threeColumn_content {
-      width: 30%;
+      width: 30% !important;
   }
 
   .contactUs {
