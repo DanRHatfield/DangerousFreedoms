@@ -425,7 +425,10 @@ address {
     width: 100vw;
     z-index: 2;
     font-size: 0.8em;
+    display: flex;
+    justify-content: center;
   }
+
 
   #vpResult {
     display: none;
@@ -531,12 +534,18 @@ address {
     background-color: white; /* #D3BDA3 */
     text-align: center;
     color: black;
-    height: 2vh;
+    height: 4vh;
     position: absolute;
     bottom: 0;
     width: 100vw;
     z-index: 2;
     font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer span {
+    width: 350px;
   }
 
   #vpResult {

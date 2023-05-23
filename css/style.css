@@ -141,10 +141,7 @@ ul {
   #serv_desc {
     line-height: 1.1em;
   }
-}
 
-/* From Internal css. */
-@media screen and (width < 600px) {
   footer {
     background-color: white; /* #D3BDA3 */
     text-align: center;
@@ -155,6 +152,27 @@ ul {
     width: 100vw;
     z-index: 2;
     font-size: .85rem;
+  }
+}
+
+/* From Internal css. */
+@media screen and (width < 600px) {
+  footer {
+    background-color: white; /* #D3BDA3 */
+    text-align: center;
+    color: black;
+    height: 4vh;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: 2;
+    font-size: .85rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer span {
+    width: 350px;
   }
 
   header {
