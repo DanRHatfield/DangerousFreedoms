@@ -1,4 +1,3 @@
-/* Box Model Hack */
 * {
   box-sizing: border-box;
 }
@@ -15,7 +14,6 @@ body {
 header, h1 {
   display: flex;
   align-items: center;
-  /* font-family: 'Monsieur La Doulaise', cursive; */
   font-family: 'Deutsche Zierschrift', sans-serif;
   background: white;
   height: 16vh;
@@ -35,7 +33,6 @@ footer {
   background-color: black;
   text-align: center;
   color: white;
-  /* height: 2vh; */
   padding: 5px 0 0 0;
 }
 
@@ -43,7 +40,6 @@ footer {
   background-image: url(../img/flagslogan.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  /* height: 88vh; */
   height: calc(100vh - 16vh - 2vh);
 }
 
@@ -62,7 +58,6 @@ menu {
   width: 200px;
   float: right;
   position: relative;
- /* border: 1px solid white; */
 }
 
 /* Index page */
@@ -71,22 +66,6 @@ menu {
   height: 100%;
   margin: 0 1vw;
 }
-
-/* #hp_top {
-  display: flex;
-  align-items: center;
-  font-family: 'Monsieur La Doulaise', cursive;
-  background: white;
-  height: 16vh;
-} */
-
-/* h1 {
-  display: inline-block;
-  margin: auto;
-  font-size: 5em;
-  width: 75.5vw;
-  text-align: center;
-} */
 
 a {
   text-decoration: none;
@@ -108,7 +87,6 @@ ul {
   text-align: center;
   right: 200px;
   background: rgba(255, 255, 255, .4);
-  /* border: 1px solid red; */
   line-height: 1em;
   padding: 0;
   top: 0vh;
@@ -124,7 +102,6 @@ ul {
   text-align: center;
 }
 
-/* From Internal css. */
 @media screen and (width >= 600px) {
   h1 {
     font-size: clamp(2em, 8vw, 8em);
@@ -143,7 +120,7 @@ ul {
   }
 
   footer {
-    background-color: white; /* #D3BDA3 */
+    background-color: white;
     text-align: center;
     color: black;
     height: 3vh;
@@ -155,10 +132,9 @@ ul {
   }
 }
 
-/* From Internal css. */
 @media screen and (width < 600px) {
   footer {
-    background-color: white; /* #D3BDA3 */
+    background-color: white;
     text-align: center;
     color: black;
     height: 4vh;
@@ -227,7 +203,4 @@ ul {
     height: 87vh;
     background-size: 250vw 87vh;
   }
-
-
 }
-
