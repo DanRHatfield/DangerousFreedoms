@@ -388,6 +388,18 @@ address {
   .contactUs {
     font-size: x-large
   }
+
+  footer {
+    background-color: white; /* #D3BDA3 */
+    text-align: center;
+    color: black;
+    height: 2vh;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: 2;
+    font-size: 0.8em;
+  }
 }
 
 
