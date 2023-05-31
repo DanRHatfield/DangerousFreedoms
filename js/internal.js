@@ -26,7 +26,7 @@ else if(numImages == 2) {
     ))
 }
 
-document.getElementById('serv_name1').innerText = vpHeight + ' ' + vpWidth
+// document.getElementById('serv_name1').innerText = vpHeight + ' ' + vpWidth
 // selectedImage.forEach(el => {
 //     el.addEventListener('click', showFullImage)
 // })
