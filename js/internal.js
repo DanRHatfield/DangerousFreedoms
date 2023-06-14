@@ -35,7 +35,7 @@ function goHome() {
     open("index.html", '_self')
 }
 
-function showFullImage() {
-    console.log("It worked!")
-    console.log(this)
-}
+// function showFullImage() {
+//     console.log("It worked!")
+//     console.log(this)
+// }

@@ -155,7 +155,7 @@ li {
   margin: 0 auto 5px auto;
   border-radius: 10px;
   border: 1px solid black;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .ser_imgSharpening {
